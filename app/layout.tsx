@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
+"use client";
 import { Sen } from "next/font/google";
 import "./globals.css";
+import Footer from "./shared/footer";
+import Header from "./shared/header";
 
 const sen = Sen({ weight: "400", subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Mani Kant Sharma",
-  description:
-    "I'm from Lucknow and I have been working as a React Developer for more than 1 years.",
-};
 
 export default function RootLayout({
   children,
@@ -17,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sen.className}>{children}</body>
+      <title>Mani Kant Sharma</title>
+      <body className={`bg-secondary ${sen.className}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
