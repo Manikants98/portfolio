@@ -11,8 +11,23 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Page() {
-  const navigate = useRouter();
+  const router = useRouter();
 
+  const redirectToGmail = () => {
+    const email = "manikants157@gmail.com";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    window.open(gmailUrl, "_blank");
+  };
+
+  const handleDownload = () => {
+    const fileUrl = "/Mani@resumeUpdatedSep.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "ManiKantSharma.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="flex flex-col dark:bg-secondary">
       <div className="flex flex-col dark:text-white w-full min-h-screen px-3 lg:px-[8%]">
@@ -36,14 +51,17 @@ export default function Page() {
             <Button
               size="large"
               className="!bg-primary !capitalize !px-5 !rounded-none !text-white"
+              onClick={redirectToGmail}
             >
               Email Me
             </Button>
+
             <Button
               startIcon={<Download />}
               size="large"
               color="success"
               className="!text-opacity-70 !capitalize !rounded-none dark:!text-white"
+              onClick={handleDownload}
             >
               Download CV
             </Button>
@@ -118,7 +136,7 @@ export default function Page() {
           </p>
           <button
             className="p-2 border-2 border-primary transition-all duration-300 hover:bg-primary"
-            onClick={() => navigate.push("/project")}
+            onClick={() => router.push("/project")}
           >
             View All Project
           </button>
@@ -201,6 +219,7 @@ export default function Page() {
         <Button
           size="large"
           className="!bg-primary !capitalize !px-5 !rounded-none !text-white"
+          onClick={redirectToGmail}
         >
           Contact Me
         </Button>
