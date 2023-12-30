@@ -28,6 +28,7 @@ export default function Page() {
     link.click();
     document.body.removeChild(link);
   };
+
   return (
     <div className="flex flex-col dark:bg-secondary">
       <div className="flex flex-col dark:text-white w-full min-h-screen px-3 lg:px-[8%]">
@@ -84,7 +85,7 @@ export default function Page() {
           <div className="grid lg:grid-cols-4 pb-10 lg:gap-16 gap-10">
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131]">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-2xl font-bold whitespace-nowrap">
+              <p className="text-lg font-bold whitespace-nowrap">
                 Web App Development
               </p>
               <p className="text-white text-opacity-60">
@@ -94,7 +95,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131]">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-2xl font-bold whitespace-nowrap">
+              <p className="text-lg font-bold whitespace-nowrap">
                 Mobile App Development
               </p>
               <p className="text-white text-opacity-60">
@@ -104,7 +105,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131]">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-2xl font-bold whitespace-nowrap">
+              <p className="text-lg font-bold whitespace-nowrap">
                 Web App Development
               </p>
               <p className="text-white text-opacity-60">
@@ -114,7 +115,7 @@ export default function Page() {
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131]">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-2xl font-bold whitespace-nowrap">
+              <p className="text-lg font-bold whitespace-nowrap">
                 ERP Development
               </p>
               <p className="text-white text-opacity-60">

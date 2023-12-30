@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>Blog</div>;
+  return <div className="dark:text-white">Blog</div>;
 }
