@@ -47,13 +47,8 @@ const Header = () => {
         >
           About Us
         </button>
-        <button
-          className="hover:text-primary transition-all duration-300"
-          onClick={() => navigate.push("/blog")}
-        >
-          Blog
-        </button>
-        <button className="group hover:bg-primary mx-3 relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2 pr-6">
+
+        <button className="group hover:bg-primary mx-3 relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2" onClick={()=>navigate.push('https://www.linkedin.com/in/manikants98/')}>
           <svg
             className="w-8 h-8 fill-neutral-50"
             height="100"

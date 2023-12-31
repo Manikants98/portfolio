@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Mani Kant Sharma</title>
-      <body className={`bg-secondary ${sen.className}`}>
+      <body className={`dark:bg-secondary ${sen.className}`}>
         <Header />
         {children}
         <Footer />

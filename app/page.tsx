@@ -12,7 +12,6 @@ import { useRouter } from "next/navigation";
 
 export default function Page() {
   const router = useRouter();
-
   const redirectToGmail = () => {
     const email = "manikants157@gmail.com";
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
@@ -28,6 +27,11 @@ export default function Page() {
     link.click();
     document.body.removeChild(link);
   };
+  // const arr = [{ "name": "Abhishek" }, { "name": "Mani" }]
+  // const arr1 = [...arr];
+  // const data: any = arr1.find((item) => item.name === "Abhishek")
+  // data["name"] = "Yuvi";
+  // console.log(arr1, arr, 'mkx');
 
   return (
     <div className="flex flex-col dark:bg-secondary">
@@ -50,6 +54,7 @@ export default function Page() {
           </p>
           <div className="flex items-center py-5 gap-5">
             <Button
+
               size="large"
               className="!bg-primary !capitalize !px-5 !rounded-none !text-white"
               onClick={redirectToGmail}
