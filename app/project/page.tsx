@@ -1,7 +1,7 @@
-import withAuth from "../withAuth";
+import React from 'react'
 
-function Page() {
-  return <div>Project</div>;
+export default function Page() {
+  return (
+    <div>Page</div>
+  )
 }
-
-export default withAuth(Page)

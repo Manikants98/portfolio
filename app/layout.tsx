@@ -1,4 +1,3 @@
-"use client";
 import { Sen } from "next/font/google";
 import "./globals.css";
 import Footer from "./shared/footer";

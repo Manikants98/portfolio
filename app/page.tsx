@@ -149,7 +149,8 @@ export default function Page() {
         </div>
         <div className="grid lg:grid-cols-2 gap-10 py-10">
           <div className="flex flex-col gap-3">
-            <div className="h-[400px] bg-black"></div>
+            <Image height={600} width={800} src="/Eduvilla.webp" alt="" className="rounded" />
+
             <p className="text-xl font-bold">
               Edu-Villa: An Online Learning App
             </p>
@@ -158,22 +159,22 @@ export default function Page() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="h-[400px] bg-black"></div>
+            <Image height={600} width={800} src="/crazzyhub.webp" alt="" className="rounded" />
             <p className="text-xl font-bold">Crazzyhub: An Ecommerce Web App</p>
             <p className="cursor-pointer text-primary font-bold text-lg">
               See Project <ArrowOutward />
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="h-[400px] bg-black"></div>
+            <Image height={600} width={800} src="/erpv2.webp" alt="" className="rounded" />
             <p className="text-xl font-bold">Bhaarat ERP: An ERP Web App</p>
             <p className="cursor-pointer text-primary font-bold text-lg">
               See Project <ArrowOutward />
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="h-[400px] bg-black"></div>
-            <p className="text-xl font-bold">Real Time Chat</p>
+            <Image height={600} width={800} src="/pos.webp" alt="" className="rounded" />
+            <p className="text-xl font-bold">Point Of Sale </p>
             <p className="cursor-pointer text-primary font-bold text-lg">
               See Project <ArrowOutward />
             </p>
@@ -200,7 +201,7 @@ export default function Page() {
             />
             <div className="flex flex-col items-start justify-start">
               <p>Monalisa Nona</p>
-              <p>Project Manager, Lucknow</p>
+              <p>Project Manager, United States</p>
             </div>
           </div>
           <span className="flex gap-2 items-center">
