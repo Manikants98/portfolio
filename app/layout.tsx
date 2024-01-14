@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Mani Kant Sharma</title>
-      <body className={`dark:bg-secondary ${sen.className}`}>
+      <body className={`dark:bg-secondary bg-[#f3f4f6] ${sen.className}`}>
         <Header />
         {children}
         <Footer />
