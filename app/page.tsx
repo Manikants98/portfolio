@@ -30,7 +30,7 @@ export default function Page() {
           id="home"
           className="flex flex-col lg:gap-5 justify-center p-2 lg:pt-40 pt-10"
         >
-          <div className="flex flex-col-reverse lg:items-center lg:flex-row overflow-hidden lg:pr-20">
+          <div className="flex flex-col-reverse items-center lg:flex-row overflow-hidden lg:pr-20">
             <div className="flex lg:gap-5 flex-col justify-center">
               <p className="lg:text-3xl lg:text-start text-center text-xl text-primary h-10 font-bold">
                 Hi, I'm Mani Kant Sharma
@@ -49,7 +49,7 @@ export default function Page() {
             <ArcReactor />
           </div>
 
-          <div className="flex items-center py-5 gap-5">
+          <div className="flex items-center lg:justify-start justify-center py-5 gap-5">
             <Button
               size="large"
               className="!bg-primary !capitalize !px-5 !rounded-none !text-white"
