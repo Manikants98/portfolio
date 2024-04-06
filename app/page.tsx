@@ -1,6 +1,6 @@
 "use client";
 import { ArrowOutward, Download } from "@mui/icons-material";
-import { Button, Divider } from "@mui/material";
+import { Button } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ArcReactor from "./shared/arc";
