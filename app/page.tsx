@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ArcReactor from "./shared/arc";
+import { projects } from "./mock";
 
 export default function Page() {
   const router = useRouter();
@@ -86,7 +87,9 @@ export default function Page() {
           <div className="grid lg:grid-cols-4 pb-10 gap-5">
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-lg font-bold whitespace-nowrap">ReactJs | Expert</p>
+              <p className="text-lg font-bold whitespace-nowrap">
+                ReactJs | Expert
+              </p>
               <p className="dark:text-white text-opacity-60">
                 ReactJs is a powerful JavaScript library for building user
                 interfaces. With ReactJs, I specialize in creating dynamic and
@@ -110,7 +113,9 @@ export default function Page() {
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-lg font-bold whitespace-nowrap">Flutter | Medium</p>
+              <p className="text-lg font-bold whitespace-nowrap">
+                Flutter | Medium
+              </p>
               <p className="dark:text-white text-opacity-60">
                 Flutter is Google's UI toolkit for building natively compiled
                 applications for mobile, web, and desktop from a single
@@ -122,7 +127,9 @@ export default function Page() {
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-lg font-bold whitespace-nowrap">NodeJs | Medium</p>
+              <p className="text-lg font-bold whitespace-nowrap">
+                NodeJs | Medium
+              </p>
               <p className="dark:text-white text-opacity-60">
                 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
                 engine. With Node.js, I specialize in building scalable and
@@ -152,61 +159,27 @@ export default function Page() {
           </button>
         </div>
         <div className="grid lg:grid-cols-2 gap-10 py-10">
-          <div className="flex flex-col gap-3">
-            <Image
-              height={600}
-              width={800}
-              src="/Eduvilla.webp"
-              alt=""
-              className="rounded border dark:border-gray-600"
-            />
+          {projects?.map(({ imageSrc, title,slug }) => {
+            return (
+              <div key={slug} className="flex flex-col gap-3">
+                <Image
+                  height={600}
+                  width={800}
+                  src={imageSrc}
+                  alt=""
+                  className="rounded border dark:border-gray-600"
+                />
 
-            <p className="text-xl font-bold">
-              Edu-Villa: An Online Learning App
-            </p>
-            <p className="cursor-pointer text-primary font-bold text-lg">
-              See Project <ArrowOutward />
-            </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <Image
-              height={600}
-              width={800}
-              src="/crazzyhub.webp"
-              alt=""
-              className="rounded border dark:border-gray-600"
-            />
-            <p className="text-xl font-bold">Crazzyhub: An Ecommerce Web App</p>
-            <p className="cursor-pointer text-primary font-bold text-lg">
-              See Project <ArrowOutward />
-            </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <Image
-              height={600}
-              width={800}
-              src="/erpv2.webp"
-              alt=""
-              className="rounded border dark:border-gray-600"
-            />
-            <p className="text-xl font-bold">Bhaarat ERP: An ERP Web App</p>
-            <p className="cursor-pointer text-primary font-bold text-lg">
-              See Project <ArrowOutward />
-            </p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <Image
-              height={600}
-              width={800}
-              src="/pos.webp"
-              alt=""
-              className="rounded border dark:border-gray-600"
-            />
-            <p className="text-xl font-bold">Point Of Sale </p>
-            <p className="cursor-pointer text-primary font-bold text-lg">
-              See Project <ArrowOutward />
-            </p>
-          </div>
+                <p className="text-xl font-bold">{title}</p>
+                <p
+                  className="cursor-pointer text-primary font-bold text-lg"
+                  onClick={() => router.push(`/project/${slug}`)}
+                >
+                  See Project <ArrowOutward />
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
 
