@@ -9,9 +9,8 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
+}) {(
+     return <html lang="en">
       <title>Mani Kant Sharma</title>
       <body className={`dark:bg-secondary bg-[#f3f4f6] ${sen.className}`}>
         <Header />
