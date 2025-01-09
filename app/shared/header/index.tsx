@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Menu from "../menu";
@@ -37,12 +37,12 @@ const Header = () => {
         >
           Services
         </button>
-        <button
+        {/* <button
           className="hover:text-primary transition-all duration-300"
           onClick={() => handleScroll("work")}
         >
           Work
-        </button>
+        </button> */}
         <button
           className="hover:text-primary transition-all duration-300"
           onClick={() => handleScroll("aboutus")}
@@ -50,7 +50,11 @@ const Header = () => {
           About Us
         </button>
 
-        <Link target="_blank" className="group hover:bg-primary mx-3 relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2" href='https://www.linkedin.com/in/manikants98/'>
+        <Link
+          target="_blank"
+          className="group hover:bg-primary mx-3 relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2"
+          href="https://www.linkedin.com/in/manikants98/"
+        >
           <svg
             className="w-8 h-8 fill-neutral-50"
             height="100"

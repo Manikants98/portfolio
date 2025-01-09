@@ -74,7 +74,7 @@ export default function Page() {
             className="flex lg:flex-row flex-col gap-3 justify-between py-10 lg:py-16"
           >
             <p className="lg:text-4xl text-2xl font-bold lg:w-96">
-              1.5+ years of experience working
+              2+ years of experience working
             </p>
             <div className="flex flex-col gap-2">
               <p className="text-primary font-semibold text-lg">Services</p>
