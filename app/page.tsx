@@ -142,7 +142,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         id="work"
         className="dark:bg-[#313131] dark:text-white min-h-screen lg:px-[8%] px-3 py-[4%] bg-white"
       >
@@ -181,7 +181,7 @@ export default function Page() {
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       <div className="dark:bg-[#0B0A10] bg-white lg:border-l-8 border-l-4 border-primary lg:items-center dark:text-white lg:px-[8%] px-3 py-[4%] flex lg:flex-row flex-col gap-2 justify-between">
         <div className="flex flex-col lg:gap-4">
