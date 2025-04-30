@@ -41,7 +41,7 @@ export default function Page() {
               </p>
               <p className="lg:w-1/2 lg:text-start text-center dark:text-white text-opacity-60">
                 I'm from Lucknow and I have been working as a Software Developer
-                for more than 1.5+ years. I have a strong foundation in building
+                for more than 2+ years. I have a strong foundation in building
                 responsive and user-friendly web applications. Being from
                 Lucknow, I bring a blend of cultural diversity and technical
                 expertise to my work.
@@ -84,61 +84,188 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-4 pb-10 gap-5">
+          <div className="grid lg:grid-cols-3 pb-10 gap-5">
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
               <p className="text-lg font-bold whitespace-nowrap">
                 ReactJs | Expert
               </p>
               <p className="dark:text-white text-opacity-60">
-                ReactJs is a powerful JavaScript library for building user
-                interfaces. With ReactJs, I specialize in creating dynamic and
-                interactive web applications. From crafting intuitive user
-                experiences to optimizing performance, I bring your ideas to
-                life with precision and creativity.
+                As a ReactJs expert, I build high-performance, responsive web
+                applications with clean, maintainable code. I specialize in
+                component architecture, state management with Redux/Context API,
+                and optimizing application performance. My experience includes
+                developing complex SPAs, implementing custom hooks, and
+                integrating third-party APIs.
               </p>
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
               <p className="text-lg font-bold whitespace-nowrap">
-                React Native | Medium
+                Flutter | Intermediate
               </p>
               <p className="dark:text-white text-opacity-60">
-                React Native is a framework for building native applications
-                using React. With React Native, I specialize in developing
-                cross-platform mobile applications with a single codebase. From
-                seamless user experiences to high-performance apps, I deliver
-                engaging mobile solutions tailored to your needs.
+                With Flutter, I create beautiful, natively compiled applications
+                from a single codebase. I work with widgets to build custom
+                interfaces, implement state management solutions, and integrate
+                platform-specific features. My Flutter projects feature smooth
+                animations, responsive layouts, and efficient data handling for
+                optimal user experiences across mobile platforms.
               </p>
             </div>
             <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
               <Image alt="" src={"/code.svg"} height={350} width={350} />
               <p className="text-lg font-bold whitespace-nowrap">
-                Flutter | Medium
+                NodeJs | Proficient
               </p>
               <p className="dark:text-white text-opacity-60">
-                Flutter is Google's UI toolkit for building natively compiled
-                applications for mobile, web, and desktop from a single
-                codebase. With Flutter, I specialize in creating beautiful and
-                responsive cross-platform apps. From pixel-perfect designs to
-                smooth animations, I provide innovative solutions for your
-                digital needs.
+                I develop robust backend systems with Node.js, creating RESTful
+                APIs, microservices, and real-time applications. My expertise
+                includes Express.js framework, database integration (MongoDB,
+                MySQL), authentication systems, and API development. I focus on
+                building scalable, secure, and efficient server-side solutions
+                that power modern web and mobile applications.
               </p>
             </div>
-            <div className="flex justify-center p-6 flex-col gap-5 border-b-8 border-primary shadow-lg dark:bg-[#313131] bg-white">
-              <Image alt="" src={"/code.svg"} height={350} width={350} />
-              <p className="text-lg font-bold whitespace-nowrap">
-                NodeJs | Medium
-              </p>
-              <p className="dark:text-white text-opacity-60">
-                Node.js is a JavaScript runtime built on Chrome's V8 JavaScript
-                engine. With Node.js, I specialize in building scalable and
-                efficient server-side applications. From RESTful APIs to
-                real-time web applications, I leverage the power of Node.js to
-                create robust backends that drive your digital initiatives
-                forward.
-              </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="dark:bg-[#313131] dark:text-white min-h-screen lg:px-[8%] px-3 py-[4%] bg-white">
+        <p className="text-primary font-bold py-5">NPM Contributions</p>
+        <div className="flex items-center justify-between">
+          <p className="lg:text-3xl font-bold lg:w-96 w-48">
+            My Open Source Packages
+          </p>
+          <a
+            href="https://www.npmjs.com/~your-npm-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 border-2 border-primary transition-all duration-300 hover:bg-primary"
+          >
+            View All Packages
+          </a>
+        </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 py-10">
+          <div className="flex flex-col p-5 gap-4 border-b-8 border-primary shadow-lg dark:bg-[#0B0A10] bg-white">
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-bold">react-mkx-toolkit</h3>
             </div>
+            <div className="flex flex-wrap gap-1 mt-1">
+              <img
+                src="https://img.shields.io/npm/v/react-mkx-toolkit?color=1C939D"
+                alt="npm version"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/dt/react-mkx-toolkit?color=red"
+                alt="Downloads"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/unpacked-size/react-mkx-toolkit"
+                alt="Size"
+                className="h-5"
+              />
+            </div>
+            <p className="dark:text-white text-opacity-60">
+              A collection of useful React custom hooks that provide efficient
+              ways to encapsulate and share logic among components. Includes
+              hooks for keyboard events, array randomization, geolocation,
+              scroll tracking, notifications, online status detection, window
+              resizing, and debouncing functions. Easy to install with
+              comprehensive browser support and documentation.
+            </p>
+
+            <a
+              href="https://www.npmjs.com/package/react-mkx-toolkit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-bold flex items-center gap-1 hover:underline"
+            >
+              View Package <span>→</span>
+            </a>
+          </div>
+
+          <div className="flex flex-col p-5 gap-4 border-b-8 border-primary shadow-lg dark:bg-[#0B0A10] bg-white">
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-bold">react-mkx-storage</h3>
+            </div>
+            <div className="flex flex-wrap gap-1 mt-1">
+              <img
+                src="https://img.shields.io/npm/v/react-mkx-storage?color=1C939D"
+                alt="npm version"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/dt/react-mkx-storage?color=red"
+                alt="Downloads"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/unpacked-size/react-mkx-storage"
+                alt="Size"
+                className="h-5"
+              />
+            </div>
+            <p className="dark:text-white text-opacity-60">
+              A lightweight storage management library for React applications
+              that provides three custom hooks: useLocalStorage,
+              useSessionStorage, and useCookieStorage. Each hook offers a simple
+              API to persist and synchronize state with browser storage
+              mechanisms, supporting various data types including strings,
+              numbers, objects, and arrays with automatic serialization and type
+              safety.
+            </p>
+
+            <a
+              href="https://www.npmjs.com/package/react-mkx-storage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-bold flex items-center gap-1 hover:underline"
+            >
+              View Package <span>→</span>
+            </a>
+          </div>
+
+          <div className="flex flex-col p-5 gap-4 border-b-8 border-primary shadow-lg dark:bg-[#0B0A10] bg-white">
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-bold">react-mkx-components</h3>
+            </div>
+            <div className="flex flex-wrap gap-1 mt-1">
+              <img
+                src="https://img.shields.io/npm/v/react-mkx-components?color=1C939D"
+                alt="npm version"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/dt/react-mkx-components?color=red"
+                alt="Downloads"
+                className="h-5"
+              />
+              <img
+                src="https://img.shields.io/npm/unpacked-size/react-mkx-components"
+                alt="Size"
+                className="h-5"
+              />
+            </div>
+            <p className="dark:text-white text-opacity-60">
+              A comprehensive collection of reusable React components including
+              Input with Formik integration, Select dropdowns, and conditional
+              rendering. Simplifies form handling with built-in error management
+              and provides elegant UI solutions for common development needs.
+              Features responsive design, accessibility compliance, and
+              comprehensive TypeScript support for modern web applications.
+            </p>
+
+            <a
+              href="https://www.npmjs.com/package/react-mkx-components"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-bold flex items-center gap-1 hover:underline"
+            >
+              View Package <span>→</span>
+            </a>
           </div>
         </div>
       </div>
