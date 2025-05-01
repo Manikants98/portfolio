@@ -138,7 +138,7 @@ export default function Page() {
             My Open Source Packages
           </p>
           <a
-            href="https://www.npmjs.com/~your-npm-username"
+            href="https://www.npmjs.com/~manikantsharma"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 border-2 border-primary transition-all duration-300 hover:bg-primary"
