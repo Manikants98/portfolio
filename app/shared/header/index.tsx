@@ -1,8 +1,8 @@
-"use client";
-import { useRouter } from "next/navigation";
-import React from "react";
-import Menu from "../menu";
-import Link from "next/link";
+'use client';
+import { useRouter } from 'next/navigation';
+import React from 'react';
+import Menu from '../menu';
+import Link from 'next/link';
 
 const Header = () => {
   const navigate = useRouter();
@@ -10,30 +10,27 @@ const Header = () => {
     const element = document.getElementById(id) as Element;
     if (element) {
       element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+        behavior: 'smooth',
+        block: 'start',
       });
     }
   };
   return (
-    <div className="flex sticky top-0 justify-between dark:text-white items-center z-30 dark:bg-secondary dark:bg-opacity-40 backdrop-blur px-3 lg:px-[8%] py-3">
-      <p
-        className="text-3xl lg:cursor-pointer font-bold"
-        onClick={() => navigate.push("/")}
-      >
+    <div className="sticky top-0 z-30 flex items-center justify-between px-3 py-3 backdrop-blur lg:px-[8%] dark:bg-secondary dark:bg-opacity-40 dark:text-white">
+      <p className="text-3xl font-bold lg:cursor-pointer" onClick={() => navigate.push('/')}>
         ManiKantSharma<span className="text-primary">.</span>
       </p>
       <Menu />
-      <div className="lg:flex hidden items-center gap-4">
+      <div className="hidden items-center gap-4 lg:flex">
         <button
-          className="hover:text-primary transition-all duration-300"
-          onClick={() => navigate.push("/")}
+          className="transition-all duration-300 hover:text-primary"
+          onClick={() => navigate.push('/')}
         >
           Home
         </button>
         <button
-          className="hover:text-primary transition-all duration-300"
-          onClick={() => handleScroll("services")}
+          className="transition-all duration-300 hover:text-primary"
+          onClick={() => handleScroll('services')}
         >
           Services
         </button>
@@ -44,19 +41,19 @@ const Header = () => {
           Work
         </button> */}
         <button
-          className="hover:text-primary transition-all duration-300"
-          onClick={() => handleScroll("aboutus")}
+          className="transition-all duration-300 hover:text-primary"
+          onClick={() => handleScroll('aboutus')}
         >
           About Us
         </button>
 
         <Link
           target="_blank"
-          className="group hover:bg-primary mx-3 relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2"
+          className="group relative mx-3 flex items-center justify-start gap-2 rounded bg-primary p-2 font-bold text-neutral-50 duration-500 hover:bg-primary"
           href="https://www.linkedin.com/in/manikants98/"
         >
           <svg
-            className="w-8 h-8 fill-neutral-50"
+            className="h-8 w-8 fill-neutral-50"
             height="100"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 100 100"

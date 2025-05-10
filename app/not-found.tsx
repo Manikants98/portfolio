@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex h-screen flex-col items-center justify-center">
       <p className="text-3xl font-semibold">MKX</p>
       <p> Not Found : 404</p>
     </div>

@@ -1,19 +1,20 @@
-import { Sen } from "next/font/google";
-import "./globals.css";
-import Footer from "./shared/footer";
-import Header from "./shared/header";
+import { Sen } from 'next/font/google';
+import './globals.css';
+import Footer from './shared/footer';
+import Header from './shared/header';
+import type { Metadata } from 'next';
 
-const sen = Sen({ weight: "400", subsets: ["latin"] });
+const sen = Sen({ weight: '400', subsets: ['latin'] });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata: Metadata = {
+  title: 'Mani Kant Sharma',
+  description: 'Personal portfolio website',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <title>Mani Kant Sharma</title>
-      <body className={`dark:bg-secondary bg-[#f3f4f6] ${sen.className}`}>
+    <html lang="en" className={sen.className}>
+      <body className="bg-[#f3f4f6] dark:bg-secondary">
         <Header />
         {children}
         <Footer />

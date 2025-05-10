@@ -1,6 +1,6 @@
-import { Divider, Drawer, Slide } from "@mui/material";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { Divider, Drawer, Slide } from '@mui/material';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -9,8 +9,8 @@ const Menu = () => {
     const element = document.getElementById(id) as Element;
     if (element) {
       element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+        behavior: 'smooth',
+        block: 'start',
       });
     }
   };
@@ -18,20 +18,13 @@ const Menu = () => {
   return (
     <div className="lg:hidden">
       <label className="hamburger z-50">
-        <input
-          type="checkbox"
-          checked={open}
-          onChange={(event) => setOpen(event.target.checked)}
-        />
+        <input type="checkbox" checked={open} onChange={event => setOpen(event.target.checked)} />
         <svg viewBox="0 0 32 32">
           <path
-            className="line stroke-black dark:stroke-white line-top-bottom"
+            className="line line-top-bottom stroke-black dark:stroke-white"
             d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
           ></path>
-          <path
-            className="line stroke-black dark:stroke-white"
-            d="M7 16 27 16"
-          ></path>
+          <path className="line stroke-black dark:stroke-white" d="M7 16 27 16"></path>
         </svg>
       </label>
 
@@ -40,10 +33,10 @@ const Menu = () => {
         anchor="right"
         onClose={() => setOpen(false)}
         PaperProps={{
-          className: "dark:!text-white !bg-white dark:!bg-secondary",
+          className: 'dark:!text-white !bg-white dark:!bg-secondary',
         }}
       >
-        <span className="flex justify-between items-center px-3 pt-3">
+        <span className="flex items-center justify-between px-3 pt-3">
           <p className="text-3xl font-bold">
             ManiKantSharma<span className="text-primary">.</span>
           </p>
@@ -51,59 +44,56 @@ const Menu = () => {
             <input
               type="checkbox"
               checked={open}
-              onChange={(event) => setOpen(event.target.checked)}
+              onChange={event => setOpen(event.target.checked)}
             />
             <svg viewBox="0 0 32 32">
               <path
-                className="line stroke-black dark:stroke-white line-top-bottom"
+                className="line line-top-bottom stroke-black dark:stroke-white"
                 d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
               ></path>
-              <path
-                className="line stroke-black dark:stroke-white"
-                d="M7 16 27 16"
-              ></path>
+              <path className="line stroke-black dark:stroke-white" d="M7 16 27 16"></path>
             </svg>
           </label>
         </span>
-        <div className="flex flex-col w-screen p-3">
+        <div className="flex w-screen flex-col p-3">
           <button
-            className="hover:text-primary p-2 font-semibold !text-start transition-all duration-300"
-            onClick={() => navigate.push("/")}
+            className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
+            onClick={() => navigate.push('/')}
           >
             Home
           </button>
           <Divider />
           <button
-            className="hover:text-primary p-2 font-semibold !text-start transition-all duration-300"
-            onClick={() => handleScroll("services")}
+            className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
+            onClick={() => handleScroll('services')}
           >
             Services
           </button>
           <Divider />
           <button
-            className="hover:text-primary p-2 font-semibold !text-start transition-all duration-300"
-            onClick={() => handleScroll("work")}
+            className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
+            onClick={() => handleScroll('work')}
           >
             Work
           </button>
           <Divider />
           <button
-            className="hover:text-primary p-2 font-semibold !text-start transition-all duration-300"
-            onClick={() => handleScroll("aboutus")}
+            className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
+            onClick={() => handleScroll('aboutus')}
           >
             About Us
           </button>
           <Divider />
           <button
-            className="hover:text-primary p-2 font-semibold !text-start transition-all duration-300"
-            onClick={() => navigate.push("/blog")}
+            className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
+            onClick={() => navigate.push('/blog')}
           >
             Blog
           </button>
           <Divider />
-          <button className="hover:bg-primary relative bg-primary rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2 pr-6">
+          <button className="relative flex items-center justify-start gap-2 rounded bg-primary p-2 pr-6 font-bold text-neutral-50 duration-500 hover:bg-primary">
             <svg
-              className="w-8 h-8 fill-neutral-50"
+              className="h-8 w-8 fill-neutral-50"
               height="100"
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 100 100"
