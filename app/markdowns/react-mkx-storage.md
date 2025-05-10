@@ -1,6 +1,6 @@
 ## React Custom Hooks for Browser Storage Management
 
-<div style="display: flex; flex-direction: row; align-items: center; gap: 4px; padding:10px 0px;" >
+<div style="display: flex; flex-direction: row; align-items: center; gap: 4px; padding:10px 0px; flex-wrap: wrap;" >
   <img src="https://img.shields.io/badge/Author-Mani%20Kant%20Sharma-blue" alt="Author" />
   <img src="https://img.shields.io/npm/v/react-mkx-storage?color=1C939D" alt="npm version" />
   <img src="https://img.shields.io/npm/dt/react-mkx-storage" alt="npm downloads" />
