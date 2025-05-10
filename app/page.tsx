@@ -27,7 +27,7 @@ export default function Page() {
 
   return (
     <div className="flex flex-col bg-[#f3f4f6] dark:bg-secondary">
-      <div className="flex min-h-screen w-full flex-col px-3 lg:px-[8%] dark:text-white">
+      <div className="flex min-h-screen w-full flex-col px-2 lg:px-[8%] dark:text-white">
         <div id="home" className="flex flex-col justify-center p-2 pt-10 lg:gap-5 lg:pt-40">
           <div className="flex flex-col-reverse items-center overflow-hidden lg:flex-row lg:pr-20">
             <div className="flex flex-col justify-center lg:gap-5">
