@@ -1,6 +1,5 @@
 import { skills } from '@/app/mock';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 type SkillCardProps = {
   icon: React.ReactNode;
@@ -61,21 +60,6 @@ const SkillCard = ({ icon, title, level, description, color }: SkillCardProps) =
 };
 
 const SkillsSection: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
-    return () => {
-      window.removeEventListener('resize', checkMobile);
-    };
-  }, []);
-
   return (
     <div id="skills" className="flex w-full flex-col py-6 sm:py-10 lg:py-16">
       <div className="mb-6 flex flex-col sm:mb-10 sm:px-0">

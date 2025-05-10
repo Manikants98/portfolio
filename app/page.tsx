@@ -88,7 +88,7 @@ export default function Page() {
           <p className="w-48 font-bold lg:w-96 lg:text-3xl">My Open Source Packages</p>
           <Link
             href="/contributions"
-            className="border-2 border-primary p-2 transition-all duration-300 hover:bg-primary"
+            className="whitespace-nowrap border-2 border-primary p-2 transition-all duration-300 hover:bg-primary"
           >
             View All Packages
           </Link>
