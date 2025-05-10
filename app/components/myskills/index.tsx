@@ -78,7 +78,7 @@ const SkillsSection: React.FC = () => {
 
   return (
     <div id="skills" className="flex w-full flex-col py-6 sm:py-10 lg:py-16">
-      <div className="mb-6 flex flex-col px-4 sm:mb-10 sm:px-0">
+      <div className="mb-6 flex flex-col sm:mb-10 sm:px-0">
         <h2 className="text-base font-bold text-primary sm:text-lg">Technical Expertise</h2>
         <h3 className="mt-1 text-2xl font-bold sm:mt-2 sm:text-3xl">My Skills & Technologies</h3>
         <p className="mt-2 max-w-2xl text-sm text-gray-600 sm:mt-4 sm:text-base dark:text-gray-300">
@@ -86,7 +86,7 @@ const SkillsSection: React.FC = () => {
           performant, scalable, and maintainable applications.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 px-4 sm:gap-6 sm:px-0 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:px-0 md:grid-cols-2 lg:grid-cols-3">
         {skills.map((skill, index) => (
           <SkillCard
             key={index}
