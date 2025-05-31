@@ -30,16 +30,16 @@ const Header = () => {
         </button>
         <button
           className="transition-all duration-300 hover:text-primary"
-          onClick={() => handleScroll('services')}
+          onClick={() => handleScroll('skills')}
         >
-          Services
+          My Skills
         </button>
-        {/* <button
-          className="hover:text-primary transition-all duration-300"
-          onClick={() => handleScroll("work")}
+        <button
+          className="transition-all duration-300 hover:text-primary"
+          onClick={() => handleScroll('contributions')}
         >
-          Work
-        </button> */}
+          Contributions
+        </button>
         <button
           className="transition-all duration-300 hover:text-primary"
           onClick={() => handleScroll('aboutus')}

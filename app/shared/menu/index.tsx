@@ -1,4 +1,4 @@
-import { Divider, Drawer, Slide } from '@mui/material';
+import { Divider, Drawer } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -13,6 +13,7 @@ const Menu = () => {
         block: 'start',
       });
     }
+    setOpen(false);
   };
 
   return (
@@ -65,16 +66,16 @@ const Menu = () => {
           <Divider />
           <button
             className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
-            onClick={() => handleScroll('services')}
+            onClick={() => handleScroll('skills')}
           >
-            Services
+            My Skills
           </button>
           <Divider />
           <button
             className="p-2 !text-start font-semibold transition-all duration-300 hover:text-primary"
-            onClick={() => handleScroll('work')}
+            onClick={() => handleScroll('contributions')}
           >
-            Work
+            Contributions
           </button>
           <Divider />
           <button

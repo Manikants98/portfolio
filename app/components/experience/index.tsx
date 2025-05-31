@@ -49,7 +49,7 @@ const ExperienceText = () => {
   }, []);
 
   return (
-    <p className="text-center text-2xl font-bold lg:text-start lg:text-4xl">
+    <p className="text-center text-2xl font-bold lg:w-1/2 lg:text-start lg:text-4xl">
       {experience} of experience working
     </p>
   );

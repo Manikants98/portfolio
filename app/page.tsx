@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <div className="flex flex-col bg-[#f3f4f6] dark:bg-secondary">
       <div className="flex min-h-screen w-full flex-col px-2 lg:px-[8%] dark:text-white">
-        <div id="home" className="flex flex-col justify-center p-1 pt-10 lg:gap-5 lg:pt-40">
+        <div id="home" className="flex flex-col justify-center pt-10 lg:gap-5 lg:pt-40">
           <div className="flex flex-col-reverse items-center overflow-hidden lg:flex-row lg:pr-20">
             <div className="flex flex-col justify-center lg:gap-5">
               <p className="h-10 text-center text-xl font-bold text-primary lg:text-start lg:text-3xl">
@@ -82,7 +82,10 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="min-h-screen bg-white px-3 py-[4%] lg:px-[8%] dark:bg-[#313131] dark:text-white">
+      <div
+        id="contributions"
+        className="min-h-screen bg-white px-3 py-[4%] lg:px-[8%] dark:bg-[#313131] dark:text-white"
+      >
         <p className="py-5 font-bold text-primary">NPM Contributions</p>
         <div className="flex items-center justify-between">
           <p className="w-48 font-bold lg:w-96 lg:text-3xl">My Open Source Packages</p>

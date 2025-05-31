@@ -124,3 +124,7 @@ li,
 ol {
   all: revert;
 }
+
+pre div {
+  border-radius: 5px;
+}
