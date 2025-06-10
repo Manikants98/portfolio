@@ -14,6 +14,47 @@ export default function Contributions() {
       </p>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {/* create-mkx-vite */}
+        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
+          <div className="flex items-center justify-between">
+            <h3 className="text-2xl font-bold">create-mkx-vite</h3>
+          </div>
+          <div className="mt-1 flex flex-wrap gap-1">
+            <img
+              src="https://img.shields.io/npm/v/create-mkx-vite?color=1C939D"
+              alt="npm version"
+              className="h-5"
+            />
+            <img
+              src="https://img.shields.io/npm/dt/create-mkx-vite?color=red"
+              alt="Downloads"
+              className="h-5"
+            />
+            <img
+              src="https://img.shields.io/npm/unpacked-size/create-mkx-vite"
+              alt="Size"
+              className="h-5"
+            />
+          </div>
+          <p className="flex-grow text-opacity-60 dark:text-white">
+            A professional React + TypeScript + Vite template with modern tooling and best practices
+            built-in. Features include React Router, Tailwind CSS, Material-UI, dark/light mode,
+            Formik-Yup validation, Axios setup, and organized folder structure for production-ready
+            applications.
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <span className="rounded bg-gray-200 px-2 py-1 text-sm dark:bg-gray-700">Vite</span>
+            <span className="rounded bg-gray-200 px-2 py-1 text-sm dark:bg-gray-700">React</span>
+            <span className="rounded bg-gray-200 px-2 py-1 text-sm dark:bg-gray-700">Template</span>
+          </div>
+          <Link
+            href="/contributions/create-mkx-vite"
+            className="mt-2 flex items-center gap-1 font-bold text-primary hover:underline"
+          >
+            View Package <span>→</span>
+          </Link>
+        </div>
+
         {/* react-mkx-toolkit */}
         <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
           <div className="flex items-center justify-between">
