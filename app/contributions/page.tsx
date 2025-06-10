@@ -6,8 +6,10 @@ export default function Contributions() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-[#f3f4f6] px-3 py-10 lg:px-[8%] dark:bg-secondary dark:text-white">
-      <h1 className="mb-6 text-3xl font-bold text-primary">Open Source Contributions</h1>
+    <div className="min-h-screen bg-[#f3f4f6] px-3 py-5 lg:px-[8%] lg:py-10 dark:bg-secondary dark:text-white">
+      <h1 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
+        Open Source Contributions
+      </h1>
       <p className="mb-8 max-w-3xl text-opacity-80 dark:text-white">
         I'm passionate about open source development. Here are some of my NPM packages that I've
         created to help developers build better applications.
@@ -15,9 +17,9 @@ export default function Contributions() {
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {/* create-mkx-vite */}
-        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
+        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-4 shadow-lg transition-transform duration-300 hover:-translate-y-2 lg:p-6 dark:bg-[#0B0A10]">
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-bold">create-mkx-vite</h3>
+            <p className="text-2xl font-bold text-primary">create-mkx-vite</p>
           </div>
           <div className="mt-1 flex flex-wrap gap-1">
             <img
@@ -56,9 +58,9 @@ export default function Contributions() {
         </div>
 
         {/* react-mkx-toolkit */}
-        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
+        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-4 shadow-lg transition-transform duration-300 hover:-translate-y-2 lg:p-6 dark:bg-[#0B0A10]">
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-bold">react-mkx-toolkit</h3>
+            <p className="text-2xl font-bold text-primary">react-mkx-toolkit</p>
           </div>
           <div className="mt-1 flex flex-wrap gap-1">
             <img
@@ -99,9 +101,9 @@ export default function Contributions() {
         </div>
 
         {/* react-mkx-storage */}
-        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
+        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-4 shadow-lg transition-transform duration-300 hover:-translate-y-2 lg:p-6 dark:bg-[#0B0A10]">
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-bold">react-mkx-storage</h3>
+            <p className="text-2xl font-bold text-primary">react-mkx-storage</p>
           </div>
           <div className="mt-1 flex flex-wrap gap-1">
             <img
@@ -139,9 +141,9 @@ export default function Contributions() {
         </div>
 
         {/* react-mkx-components */}
-        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 dark:bg-[#0B0A10]">
+        <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-4 shadow-lg transition-transform duration-300 hover:-translate-y-2 lg:p-6 dark:bg-[#0B0A10]">
           <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-bold">react-mkx-components</h3>
+            <p className="text-2xl font-bold text-primary">react-mkx-components</p>
           </div>
           <div className="mt-1 flex flex-wrap gap-1">
             <img

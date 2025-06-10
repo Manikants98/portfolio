@@ -99,7 +99,7 @@ export default function Page() {
         <div className="grid grid-cols-1 gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-5 shadow-lg dark:bg-[#0B0A10]">
             <div className="flex items-center justify-between">
-              <h3 className="text-xl font-bold">react-mkx-toolkit</h3>
+              <p className="text-2xl font-bold text-primary">react-mkx-toolkit</p>
             </div>
             <div className="mt-1 flex flex-wrap gap-1">
               <img
@@ -136,7 +136,7 @@ export default function Page() {
 
           <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-5 shadow-lg dark:bg-[#0B0A10]">
             <div className="flex items-center justify-between">
-              <h3 className="text-xl font-bold">react-mkx-storage</h3>
+              <p className="text-2xl font-bold text-primary">react-mkx-storage</p>
             </div>
             <div className="mt-1 flex flex-wrap gap-1">
               <img
@@ -173,7 +173,7 @@ export default function Page() {
 
           <div className="flex flex-col gap-4 border-b-8 border-primary bg-white p-5 shadow-lg dark:bg-[#0B0A10]">
             <div className="flex items-center justify-between">
-              <h3 className="text-xl font-bold">react-mkx-components</h3>
+              <p className="text-2xl font-bold text-primary">react-mkx-components</p>
             </div>
             <div className="mt-1 flex flex-wrap gap-1">
               <img
