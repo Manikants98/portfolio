@@ -178,4 +178,4 @@ If you encounter any issues or have questions:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License – see the <a href="https://github.com/ManiKantSharma/create-mkx-vite/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a> file for details.
