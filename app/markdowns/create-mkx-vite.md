@@ -66,31 +66,31 @@ my-awesome-app/
 ├── public/
 │   └── vite.svg
 ├── src/
-│   ├── Authentication/          # Auth components
+│   ├── Authentication/
 │   │   ├── SignIn/
 │   │   └── SignUp/
-│   ├── Components/              # Reusable UI components
+│   ├── Components/
 │   │   ├── Common/
 │   │   │   ├── Header/
 │   │   │   └── Footer/
 │   │   └── Home/
-│   ├── Pages/                   # Route components
+│   ├── Pages/
 │   │   ├── Home/
 │   │   ├── AboutUs/
 │   │   └── ContactUs/
-│   ├── Services/                # API service layer
+│   ├── Services/
 │   │   ├── Home/
 │   │   ├── AboutUs/
 │   │   └── ContactUs/
-│   ├── Configs/                 # App configuration
+│   ├── Configs/
 │   │   ├── axios.ts
 │   │   └── urls.ts
-│   ├── Schemas/                 # Validation schemas
-│   ├── Routes/                  # Route definitions
-│   ├── Layout/                  # Layout components
-│   ├── Mock/                    # Mock data
-│   ├── Resources/               # Static assets
-│   └── NotFound/                # 404 component
+│   ├── Schemas/
+│   ├── Routes/
+│   ├── Layout/
+│   ├── Mock/
+│   ├── Resources/
+│   └── NotFound/
 ├── index.html
 ├── .eslintrc.cjs
 ├── package.json
