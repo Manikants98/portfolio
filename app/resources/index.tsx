@@ -1,8 +1,10 @@
+import classNames from 'classnames';
 import React, { SVGProps } from 'react';
 
 /**
  * Flutter icon component
  * Renders the Flutter logo as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
  * @returns {JSX.Element} Flutter logo SVG
  */
 export const FlutterIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Element => {
@@ -39,6 +41,7 @@ export const FlutterIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Eleme
 /**
  * React icon component
  * Renders the React logo as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
  * @returns {JSX.Element} React logo SVG
  */
 export const ReactIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Element => {
@@ -65,6 +68,7 @@ export const ReactIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Element
 /**
  * Node.js icon component
  * Renders the Node.js logo as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
  * @returns {JSX.Element} Node.js logo SVG
  */
 export const NodeJsIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Element => {
@@ -86,6 +90,373 @@ export const NodeJsIcon: React.FC<SVGProps<SVGSVGElement>> = (props): JSX.Elemen
             fill="#539E43"
           ></path>
         </g>
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Project icon component
+ * Renders the Project icon as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
+ * @returns {JSX.Element} Project icon SVG
+ */
+export const ProjectIcon: React.FC<SVGProps<SVGSVGElement> & { isSelected: boolean }> = (
+  props
+): JSX.Element => {
+  const { isSelected, ...rest } = props;
+  return (
+    <svg height={24} width={24} viewBox="0 0 24 24" fill="none" {...props}>
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
+      <g>
+        <path
+          opacity="0.5"
+          d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+          stroke="#069110"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+          strokeWidth="2"
+        ></path>
+        <path
+          d="M7 18V9"
+          stroke="#069110"
+          strokeWidth="2"
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M12 18V6"
+          stroke="#069110"
+          strokeWidth="2"
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M17 18V13"
+          stroke="#069110"
+          strokeWidth="2"
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Blog icon component
+ * Renders the Blog icon as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
+ * @returns {JSX.Element} Blog icon SVG
+ */
+export const BlogIcon: React.FC<SVGProps<SVGSVGElement> & { isSelected: boolean }> = (
+  props
+): JSX.Element => {
+  const { isSelected, ...rest } = props;
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      width={24}
+      height={24}
+      className={classNames('!transition-all group-hover:stroke-white', {
+        '!stroke-white': isSelected,
+      })}
+      {...props}
+    >
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
+      <g>
+        <path
+          opacity="0.5"
+          d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M8 12H16"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M8 8H16"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M8 16H13"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Contribution icon component
+ * Renders the Contribution icon as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
+ * @returns {JSX.Element} Contribution icon SVG
+ */
+export const ContributionIcon: React.FC<SVGProps<SVGSVGElement> & { isSelected: boolean }> = (
+  props
+): JSX.Element => {
+  const { isSelected, ...rest } = props;
+  return (
+    <svg
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      className={classNames('!transition-all group-hover:stroke-white', {
+        '!stroke-white': isSelected,
+      })}
+      {...props}
+    >
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
+      <g>
+        <path
+          d="M8 9V15"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M12 9V15"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M8 12H13C13.9319 12 14.3978 12 14.7654 11.8478C15.2554 11.6448 15.6448 11.2554 15.8478 10.7654C16 10.3978 16 9.93188 16 9"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <rect
+          opacity="0.5"
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="5"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></rect>
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Skill icon component
+ * Renders the Skill icon as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
+ * @returns {JSX.Element} Skill icon SVG
+ */
+export const SkillIcon: React.FC<SVGProps<SVGSVGElement> & { isSelected: boolean }> = (
+  props
+): JSX.Element => {
+  const { isSelected, ...rest } = props;
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      width={24}
+      height={24}
+      className={classNames('!transition-all group-hover:stroke-white', {
+        '!stroke-white': isSelected,
+      })}
+      {...props}
+    >
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
+      <g>
+        <path
+          opacity="0.5"
+          d="M7 17.9983C4.82497 17.9862 3.64706 17.8897 2.87868 17.1213C2 16.2426 2 14.8284 2 12L2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2L16 2C18.8284 2 20.2426 2 21.1213 2.87868C22 3.75736 22 5.17157 22 8V12C22 14.8284 22 16.2426 21.1213 17.1213C20.3915 17.8512 19.2921 17.9748 17.3197 17.9957L16.5 17.9983"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M9 6L15 6"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M7 9.5H17"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M10.8907 13.9454C11.53 13.4007 12.4702 13.4007 13.1094 13.9454C13.3833 14.1789 13.7239 14.32 14.0827 14.3486C14.9199 14.4154 15.5847 15.0802 15.6515 15.9174C15.6802 16.2762 15.8212 16.6168 16.0547 16.8907C16.5994 17.53 16.5994 18.4702 16.0547 19.1094C15.8212 19.3833 15.6802 19.7239 15.6515 20.0827C15.5847 20.9199 14.9199 21.5847 14.0827 21.6515C13.7239 21.6802 13.3833 21.8212 13.1094 22.0547C12.4702 22.5994 11.53 22.5994 10.8907 22.0547C10.6168 21.8212 10.2762 21.6802 9.91743 21.6515C9.08021 21.5847 8.41539 20.9199 8.34858 20.0827C8.31995 19.7239 8.17888 19.3833 7.94543 19.1094C7.40068 18.4702 7.40068 17.53 7.94543 16.8907C8.17888 16.6168 8.31995 16.2762 8.34858 15.9174C8.4154 15.0802 9.08021 14.4154 9.91743 14.3486C10.2762 14.32 10.6168 14.1789 10.8907 13.9454Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M10.5 18.2L11.3571 19L13.5 17"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Dashboard icon component
+ * Renders the Dashboard icon as an SVG
+ * @param {SVGProps<SVGSVGElement>} props - SVG element props
+ * @returns {JSX.Element} Dashboard icon SVG
+ */
+export const DashboardIcon: React.FC<SVGProps<SVGSVGElement> & { isSelected: boolean }> = (
+  props
+): JSX.Element => {
+  const { isSelected, ...rest } = props;
+  return (
+    <svg
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      className={classNames('!transition-all group-hover:stroke-white', {
+        '!stroke-white': isSelected,
+      })}
+      {...props}
+    >
+      <g strokeWidth="0"></g>
+      <g strokeLinecap="round" strokeLinejoin="round"></g>
+      <g>
+        <path
+          d="M5.5 15.5C5.5 14.5572 5.5 14.0858 5.79289 13.7929C6.08579 13.5 6.55719 13.5 7.5 13.5H8.5C9.44281 13.5 9.91421 13.5 10.2071 13.7929C10.5 14.0858 10.5 14.5572 10.5 15.5V16.5C10.5 17.4428 10.5 17.9142 10.2071 18.2071C9.91421 18.5 9.44281 18.5 8.5 18.5C7.08579 18.5 6.37868 18.5 5.93934 18.0607C5.5 17.6213 5.5 16.9142 5.5 15.5Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M5.5 8.5C5.5 7.08579 5.5 6.37868 5.93934 5.93934C6.37868 5.5 7.08579 5.5 8.5 5.5C9.44281 5.5 9.91421 5.5 10.2071 5.79289C10.5 6.08579 10.5 6.55719 10.5 7.5V8.5C10.5 9.44281 10.5 9.91421 10.2071 10.2071C9.91421 10.5 9.44281 10.5 8.5 10.5H7.5C6.55719 10.5 6.08579 10.5 5.79289 10.2071C5.5 9.91421 5.5 9.44281 5.5 8.5Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M13.5 15.5C13.5 14.5572 13.5 14.0858 13.7929 13.7929C14.0858 13.5 14.5572 13.5 15.5 13.5H16.5C17.4428 13.5 17.9142 13.5 18.2071 13.7929C18.5 14.0858 18.5 14.5572 18.5 15.5C18.5 16.9142 18.5 17.6213 18.0607 18.0607C17.6213 18.5 16.9142 18.5 15.5 18.5C14.5572 18.5 14.0858 18.5 13.7929 18.2071C13.5 17.9142 13.5 17.4428 13.5 16.5V15.5Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          d="M13.5 7.5C13.5 6.55719 13.5 6.08579 13.7929 5.79289C14.0858 5.5 14.5572 5.5 15.5 5.5C16.9142 5.5 17.6213 5.5 18.0607 5.93934C18.5 6.37868 18.5 7.08579 18.5 8.5C18.5 9.44281 18.5 9.91421 18.2071 10.2071C17.9142 10.5 17.4428 10.5 16.5 10.5H15.5C14.5572 10.5 14.0858 10.5 13.7929 10.2071C13.5 9.91421 13.5 9.44281 13.5 8.5V7.5Z"
+          stroke="#069110"
+          strokeWidth={2}
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M10 22C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M10 2C6.22876 2 4.34315 2 3.17157 3.17157C2 4.34315 2 6.22876 2 10"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
+        <path
+          opacity="0.5"
+          d="M14 2C17.7712 2 19.6569 2 20.8284 3.17157C22 4.34315 22 6.22876 22 10"
+          stroke="#069110"
+          strokeWidth={2}
+          strokeLinecap="round"
+          className={classNames('!transition-all group-hover:stroke-white', {
+            '!stroke-white': isSelected,
+          })}
+        ></path>
       </g>
     </svg>
   );

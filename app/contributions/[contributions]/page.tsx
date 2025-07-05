@@ -10,7 +10,6 @@ import remarkGfm from 'remark-gfm';
 
 export default function Contributions() {
   const { contributions } = useParams();
-
   const [markdown, setMarkdown] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -18,7 +17,7 @@ export default function Contributions() {
   useEffect(() => {
     const fetchMarkdown = async () => {
       try {
-        const response = await fetch(`/api/markdown?file=${contributions}`);
+        const response = await fetch(`/api/contribution?file=${contributions}`);
         if (!response.ok) {
           throw new Error('Failed to fetch markdown content');
         }

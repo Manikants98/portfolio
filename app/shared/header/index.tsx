@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Menu from '../menu';
 import Link from 'next/link';
 
@@ -15,10 +15,19 @@ const Header = () => {
       });
     }
   };
+  useEffect(() => {
+    if (typeof window !== undefined && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, []);
+
   return (
-    <div className="sticky top-0 z-30 flex items-center justify-between px-3 py-3 backdrop-blur lg:px-[8%] dark:bg-secondary dark:bg-opacity-40 dark:text-white">
+    <div className="sticky top-0 z-30 flex items-center justify-between px-3 py-3 backdrop-blur lg:px-[8%] dark:text-white">
       <p className="text-3xl font-bold lg:cursor-pointer" onClick={() => navigate.push('/')}>
-        ManiKantSharma<span className="text-primary">.</span>
+        <span className="text-primary">&lt;</span>ManiKantSharma
+        <span className="text-primary"> /&gt;</span>
       </p>
       <Menu />
       <div className="hidden items-center gap-4 lg:flex">

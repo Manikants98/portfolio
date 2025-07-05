@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -115,7 +115,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply !text-primary;
+  color: #069110;
   all: revert;
 }
 
@@ -127,4 +127,8 @@ ol {
 
 pre div {
   border-radius: 5px;
+}
+
+.tox .tox-edit-area::before {
+  border: none !important;
 }
