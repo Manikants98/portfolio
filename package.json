@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next dev",
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "clean": "rm -rf .next && rm -rf node_modules/.cache",
     "prisma:seed": "npx prisma db seed",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
