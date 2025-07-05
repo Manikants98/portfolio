@@ -19,7 +19,7 @@ import {
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Editor } from '@tinymce/tinymce-react';
 import React, { useRef, useState } from 'react';
-import ManageBlogs from './manage/page';
+import ManageBlogs from './manage/ManageBlogs';
 
 interface Blog {
   id: string;
