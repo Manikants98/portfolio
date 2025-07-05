@@ -14,7 +14,7 @@ const globalForPrisma: { prisma: PrismaClient } = global as unknown as { prisma:
 export const prisma: PrismaClient =
   globalForPrisma.prisma ||
   new PrismaClient({
-    log: ['query'],
+    log: process.env.NODE_ENV === 'development' ? ['query'] : [],
   });
 
 // Store prisma instance in global scope during development

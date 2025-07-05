@@ -1,16 +1,21 @@
 import { prisma } from '@/lib/prisma';
 import userSchema from '@/schemas/user';
 import bcrypt from 'bcrypt';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 
 export async function GET() {
-  const users = await prisma.user.findMany();
-  const safeUsers = users.map(({ password, ...user }) => user);
-  return NextResponse.json(safeUsers);
+  try {
+    const users = await prisma.user.findMany();
+    const safeUsers = users.map(({ password, ...user }) => user);
+    return NextResponse.json(safeUsers);
+  } catch (error) {
+    console.error('Error fetching users:', error);
+    return NextResponse.json({ error: 'Failed to fetch users' }, { status: 500 });
+  }
 }
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const validated = userSchema.parse(body);
