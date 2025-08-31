@@ -25,7 +25,10 @@ const Header = () => {
 
   return (
     <div className="sticky top-0 z-30 flex items-center justify-between px-3 py-3 backdrop-blur lg:px-[8%] dark:text-white">
-      <p className="text-3xl font-bold lg:cursor-pointer" onClick={() => navigate.push('/')}>
+      <p
+        className="text-2xl font-bold lg:cursor-pointer lg:text-3xl"
+        onClick={() => navigate.push('/')}
+      >
         <span className="text-primary">&lt;</span>ManiKantSharma
         <span className="text-primary"> /&gt;</span>
       </p>

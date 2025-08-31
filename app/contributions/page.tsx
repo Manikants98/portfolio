@@ -26,7 +26,7 @@ export default function Contributions() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f3f4f6] px-3 py-5 lg:px-[8%] lg:py-10 dark:bg-secondary dark:text-white">
+    <div className="min-h-screen bg-[#f3f4f6] px-3 py-3 lg:px-[8%] lg:py-10 dark:bg-secondary dark:text-white">
       <h1 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
         Open Source Contributions
       </h1>
