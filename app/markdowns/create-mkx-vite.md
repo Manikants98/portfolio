@@ -15,8 +15,7 @@ A professional React + TypeScript + Vite template with modern tooling and best p
 ## 🚀 Quick Start
 
 ```bash
-npx create-mkx-vite my-awesome-app
-cd my-awesome-app
+npx create-mkx-vite
 npm run dev
 ```
 
